@@ -18,13 +18,13 @@ public class Tecnologico {
     private int codigoTec;
 
     @Column(name = "TEC_MODELO", nullable = false)
-    private String modelo;
+    private int modelo;
 
     @Column(name = "TEC_NOMBRE", nullable = false)
     private String nombre;
 
     @Column(name = "TEC_COSTO", nullable = false)
-    private int costo;
+    private long costo;
 
     @Column(name = "TRAN_ESTABLECIMIENTO", nullable = false)
     private String establecimiento;
