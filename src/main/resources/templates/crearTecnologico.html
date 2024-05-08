@@ -14,13 +14,14 @@
         <div class="card-body">
             <form th:action="@{/accioncrear}" method="post" th:object="${Tecnologicollenar}">
                 <div class="mb-3">
-                    <label for="modelo" class="form-label">Modelo:</label>
-                    <input id="modelo" type="text" class="form-control" th:field="*{modelo}" required autofocus>
-                </div>
-                <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input id="nombre" type="text" class="form-control" th:field="*{nombre}" required autofocus>
                 </div>
+                <div class="mb-3">
+                    <label for="modelo" class="form-label">Modelo:</label>
+                    <input id="modelo" type="text" class="form-control" th:field="*{modelo}" required autofocus>
+                </div>
+
                 <div class="mb-3">
                     <label for="costo" class="form-label">Costo:</label>
                     <input id="costo" type="text" class="form-control" th:field="*{costo}" required autofocus>

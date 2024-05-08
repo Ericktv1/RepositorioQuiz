@@ -15,9 +15,9 @@
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-            <th>Codigo</th>
-            <th>Modelo</th>
+            <th>Código</th>
             <th>Nombre</th>
+            <th>Modelo</th>
             <th>Costo</th>
             <th>Establecimiento</th>
 
@@ -26,8 +26,8 @@
         <tbody>
         <tr th:each="dato : ${listatecnologicoT}">
             <td th:text="${dato.codigoTec}">-</td>
-            <td th:text="${dato.modelo}">-</td>
             <td th:text="${dato.nombre}">-</td>
+            <td th:text="${dato.modelo}">-</td>
             <td th:text="${dato.costo}">-</td>
             <td th:text="${dato.establecimiento}">-</td>
         </tr>
